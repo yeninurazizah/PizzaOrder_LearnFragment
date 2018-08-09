@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama " />
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/edit_text"
+        android:src="@drawable/ic_close_black_24dp" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_view"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_button"
+        android:text="Pilih Jenis Pizza" />
+
+    <CheckBox
+        android:id="@+id/check_daging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view"
+        android:text="Pizza Daging" />
+
+    <RadioGroup
+        android:id="@+id/radio_daging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_daging"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/daging_s"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="S" />
+
+        <RadioButton
+            android:id="@+id/daging_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M" />
+
+        <RadioButton
+            android:id="@+id/daging_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/check_keju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_daging"
+        android:text="Pizza Keju" />
+
+    <RadioGroup
+        android:id="@+id/radio_keju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_keju"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/keju_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S" />
+
+        <RadioButton
+            android:id="@+id/keju_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M" />
+
+        <RadioButton
+            android:id="@+id/keju_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/check_buah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_keju"
+        android:layout_marginBottom="159dp"
+        android:text="Pizza Buah" />
+
+    <RadioGroup
+        android:id="@+id/radio_buah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_buah"
+        android:layout_marginTop="-159dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/buah_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S" />
+
+        <RadioButton
+            android:id="@+id/buah_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M" />
+
+        <RadioButton
+            android:id="@+id/buah_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switch_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_buah"
+        android:text="  Up Size " />
+
+    <Button
+        android:id="@+id/pesan_skrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch_up"
+        android:text="Pesan Sekarang" />
+
+
+</RelativeLayout>
